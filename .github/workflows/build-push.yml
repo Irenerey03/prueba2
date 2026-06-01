@@ -29,4 +29,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_TOKEN }}/dap-postgres-world:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dap-postgres-world:latest
