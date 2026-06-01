@@ -9,6 +9,7 @@ WORKDIR /tmp
 RUN wget https://ftp.postgresql.org/pub/projects/pgFoundry/dbsamples/world/world-1.0/world-1.0.tar.gz
 
 RUN tar -xzf world-1.0.tar.gz
+RUN find /tmp -type f
 
 #etapa 2
 FROM postgres:17-alpine
