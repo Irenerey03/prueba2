@@ -14,5 +14,5 @@ RUN find /tmp -type f
 #etapa 2
 FROM postgres:17-alpine
 
-COPY --from=downloader /tmp/dbsamples-0.1/world.sql \
+COPY --from=downloader /tmp/dbsamples-0.1/world/world.sql \
 /docker-entrypoint-initdb.d/world.sql
