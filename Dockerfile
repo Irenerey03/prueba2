@@ -6,9 +6,9 @@ RUN apt-get update && \
 
 WORKDIR /tmp
 
-RUN wget https://github.com/ghusta/docker-postgres-world-db/raw/master/world.sql
+RUN wget https://ftp.postgresql.org/pub/projects/pgFoundry/dbsamples/world/world-1.0/world-1.0.tar.gz
 
-RUN find /tmp -type f
+RUN tar -xzf world-1.0.tar.gz
 
 #etapa 2
 FROM postgres:17-alpine
